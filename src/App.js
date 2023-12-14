@@ -1,13 +1,74 @@
+import React from 'react';
 import Footer from './components/footer/Footer'
 import Header from './components/header/Header'
+import Items from './components/items/items'
 
-function App() {
+class App extends React.Component {
+  constructor(props) {
+    super(props) 
+      this.state = {
+        items: [
+          {
+            id: 1,
+            title: 'CS:GO',
+            img: '1bc7636d748467aab3c13ff3f43af0bf.jpg',
+            desc: 'CS:GO очень знаменитый шутер в который играют по всему миру',
+            category: 'shooter',
+            price: '9.99',
+          },
+          {
+            id: 2,
+            title: 'Dota',
+            img: 'f70a4d0192ec9af45f1316fa7e6809d2.jpg',
+            desc: 'Dota это мобоигра в которую играют в основном школьники',
+            category: 'mob',
+            price: '0.99',
+          },
+          {
+            id: 3,
+            title: 'Fifa',
+            img: '9fa013eaf8ba100d89e82c913db6077b.jpg',
+            desc: 'Fifa самый знаменитый футбольный эмулятор в мире',
+            category: 'football',
+            price: '19.99',
+          },
+          {
+            id: 4,
+            title: 'Rocket League',
+            img: '01e1f73fbd97647ea683a9c861a98b97.jpg',
+            desc: 'Rocket League это игра про футбол на машинах',
+            category: 'football',
+            price: '4.99',
+          },
+          {
+            id: 5,
+            title: 'Minecraft',
+            img: 'b9d239df0584991668f469cd404cf407.jpg',
+            desc: 'Minecraft это одна из самых знаменитых игр про выживание в мире ',
+            category: 'exploring',
+            price: '9.99',
+          },
+          {
+            id: 6,
+            title: 'PUBG',
+            img: '5e68e4a0cbe4a056aca1c33c5c6dcbbc.jpg',
+            desc: 'PUBG это королевская битва в которой побеждает тот, кто остается последним',
+            category: 'shooter',
+            price: '4.99',
+          },
+        ]
+    }
+  }
+
+  render() {
   return (
-    <div className='wrapper'>
-      <Header />
-      <Footer/>
-    </div>
-  );
+      <div className='wrapper'>
+        <Header />
+        <Items items={this.state.items}/>
+        <Footer/>
+      </div>
+    );
+  }
 }
 
 export default App;

@@ -40,14 +40,68 @@ header ul.nav li:hover {
 
 header .presentation {
     margin: 50px auto;
-    background: url('https://i.pinimg.com/564x/90/5a/64/905a64a12b902400005457689543fbd3.jpg') no-repeat;
+    background: url('https://i.pinimg.com/564x/b8/28/c5/b828c5c013edf0536378846f99d3803c.jpg') no-repeat;
     width: 100%;
-    height: 500px;
+    height: 700px;
     background-size: cover;
     background-position: center center;
-    border-radius: 5%;
-    /* background-blend-mode: multiply; */
-    /* background-color: #bcbcbc; */
+    border-radius: 10px;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .item {
+    width: 30%;
+    margin-bottom: 50px;
+    background: #de9dff;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+
+main .item img {
+    width: 100%;
+    /* border-radius: 10px 10px 0 0; */
+    transition: transform 500ms ease;
+}
+
+main .item img:hover {
+    transform: scale(1.05);
+}
+
+main h2, b, p {
+    margin: 10px 20px;
+    color: #333;
+}
+
+main b {
+    color: #007d19;
+}
+
+main .add-to-cart {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #ca5252;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: 600;
+    transition: transform 500ms ease;
+}
+
+main .add-to-cart:hover {
+    transform: scale(1.5) translateY(-5px);
 }
 
 footer {
