@@ -128,6 +128,23 @@ header .presentation {
     border-radius: 10px;
 }
 
+.categories div {
+    display: inline-block;
+    background-color: #de9dff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-bottom: 25px;
+    margin-right: 150px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+}
+
+.categories div:hover {
+    border-color: silver;
+    transform: scale(1.1);
+}
+
 main {
     display: flex;
     width: 100%;
