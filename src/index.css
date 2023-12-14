@@ -110,6 +110,14 @@ header .shop-cart .item .delete-icon:hover {
     transform: scale(1.5);
 }
 
+header .shop-cart .summa {
+    float: left;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
 header .presentation {
     margin: 100px auto;
     background: url('https://i.pinimg.com/564x/b8/28/c5/b828c5c013edf0536378846f99d3803c.jpg') no-repeat;
